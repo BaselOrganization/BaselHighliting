@@ -3,14 +3,15 @@
   "displayName": "Basel",
   "publisher": "BaselOrganization",
   "description": "Syntax highlighting for Basel language",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "icon": "./images/icon.ico",
   "repository": "https://github.com/BaselOrganization/BaselHighlighting",
   "engines": {
     "vscode": "^1.109.0"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages",
+    "Themes"
   ],
   "contributes": {
     "languages": [
@@ -35,6 +36,13 @@
         "language": "basel",
         "scopeName": "source.bs",
         "path": "./syntaxes/basel.tmLanguage.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "Basel",
+        "uiTheme": "vs-dark",
+        "path": "./themes/basel-color-theme.json"
       }
     ]
   },

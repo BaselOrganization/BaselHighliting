@@ -8,7 +8,7 @@
 		},
 		{
 			"name": "keyword.control.basel",
-			"match": "\\b(if|else|while|return|fun|var|print|for|class|new|this|super|try|catch|throw|finally|break|continue)\\b"
+			"match": "\\b(var|if|else|while|for|return|fun|class|new|this|super|try|catch|throw|finally|break|continue|import|from|as|const|let|enum|struct|module|interface|extends|instanceof|typeof|delete|in|of|switch|case|default|async|await|yield|static|public|private|protected)\\b"
 		},
 		{
 			"name": "keyword.import.basel",
@@ -94,7 +94,7 @@
 		},
 		{
 			"name": "support.function.basel",
-			"match": "\\b(print|println|log|error|warn|info|debug|trace)\\b"
+			"match": "\\b(print|println|log|error|warn|info|debug|trace|input|len|range|open|close|read|write|append|split|join|upper|lower|replace|substring|indexOf|lastIndexOf|charAt|substr|slice|concat|reverse|sort|filter|map|reduce|forEach|find|findIndex|some|every|includes|push|pop|shift|unshift|splice|concat|slice|hasOwnProperty|toString|valueOf|parseInt|parseFloat|isNaN|isFinite|abs|ceil|floor|round|max|min|sqrt|pow|log|exp|sin|cos|tan|random)\\b"
 		},
 		{
 			"name": "comment.line.double-slash.basel",
@@ -104,6 +104,14 @@
 			"name": "comment.block.basel",
 			"begin": "/\\*",
 			"end": "\\*/"
+		},
+		{
+			"name": "keyword.operator.basel",
+			"match": "(\\+|\\-|\\*|\\/|%|\\=\\=\\=|\\!\\=\\=|\\=\\=|\\<|\\>|\\<\\=|\\>\\=|\\&\\&|\\|\\||\\!|\\&|\\||\\^|\\~|\\<\\<|\\>\\>|\\+\\=|\\-\\=|\\*\\=|\\/\\=|%\\=|\\=\\=|\\<\\<\\=|\\>\\>\\=|\\&\\=|\\|\\=|\\^\\=)"
+		},
+		{
+			"name": "punctuation.brackets.basel",
+			"match": "[\\{\\[\\(\\)\\]\\}]"
 		},
 		{
 			"name": "invalid.illegal.basel",
