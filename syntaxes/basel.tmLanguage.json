@@ -3,6 +3,10 @@
 	"name": "Basel",
 	"patterns": [
 		{
+			"name": "punctuation.asterisk.basel",
+			"match": "\\*"
+		},
+		{
 			"name": "keyword.control.basel",
 			"match": "\\b(if|else|while|return|fun|var|print|for|class|new|this|super|try|catch|throw|finally|break|continue)\\b"
 		},

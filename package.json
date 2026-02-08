@@ -3,7 +3,7 @@
   "displayName": "Basel",
   "publisher": "BaselOrganization",
   "description": "Syntax highlighting for Basel language",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "icon": "./icon.png",
   "repository": "https://github.com/BaselOrganization/BaselHighlighting",
   "engines": {
