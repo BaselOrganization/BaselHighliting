@@ -1,59 +1,34 @@
-# Basel - Syntax Highlighting
+# Basel - VS Code Extension
 
-Syntax highlighting extension for the Basel programming language in Visual Studio Code.
+Esta extensão fornece suporte para a linguagem **Basel** no Visual Studio Code, incluindo realce de sintaxe e configurações de linguagem.
 
-## Features
+## Funcionalidades
 
-- **Syntax Highlighting**: Full syntax highlighting for `.bs` files
-- **Language Support**: Supports the Basel programming language
-- **Colorization**: Keywords, strings, comments, and other syntax elements are colorized
+- **Realce de Sintaxe**: Suporte completo para a gramática da linguagem Basel (`.bs`).
+- **Configuração de Linguagem**: Suporte para comentários de linha (`//`) e bloco (`/* */`), além de fechamento automático de parênteses, colchetes e chaves.
 
-## Installation
+## Requisitos
 
-1. Open VS Code
-2. Press `Ctrl+Shift+X` (Windows/Linux) or `Cmd+Shift+X` (macOS) to open Extensions
-3. Search for "Basel"
-4. Click Install
+- Visual Studio Code v1.109.0 ou superior.
 
-Or install from a VSIX file:
-1. Run `vsce package` to generate the VSIX
-2. Press `Ctrl+Shift+P` and run "Extensions: Install from VSIX"
+## Instalação
 
-## Usage
+1. Abra o Visual Studio Code.
+2. Vá para a visualização de Extensões (`Ctrl+Shift+X`).
+3. Procure por **Basel**.
+4. Clique em **Instalar**.
 
-Open any file with `.bs` extension to see the syntax highlighting:
+*Ou, se você tiver o arquivo `.vsix`:*
+- Execute o comando `code --install-extension basel-0.0.1.vsix` no seu terminal.
 
-```basel
-// Example Basel code
-function hello() {
-    print("Hello, World!");
-}
-```
+## Estrutura do Projeto
 
-## File Association
+- `syntaxes/basel.tmLanguage.json`: Definições de realce de sintaxe.
+- `language-configuration.json`: Configurações de edição (comentários, parênteses, etc).
 
-Files with `.bs` extension are automatically recognized and highlighted.
+## Licença
 
-## Requirements
+Este projeto está sob a licença definida no arquivo `LICENSE.md`.
 
-- Visual Studio Code 1.109.0 or higher
-
-## Extension Settings
-
-This extension doesn't add any VS Code settings.
-
-## Known Issues
-
-No known issues.
-
-## Release Notes
-
-### 0.0.1
-
-Initial release of Basel syntax highlighting.
-
-## Contributing
-
-If you find any issues or have suggestions, please open an issue on the repository.
-
-**Enjoy!**
+---
+Desenvolvido por **BaselOrganization**.
