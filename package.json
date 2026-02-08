@@ -3,8 +3,8 @@
   "displayName": "Basel",
   "publisher": "BaselOrganization",
   "description": "Syntax highlighting for Basel language",
-  "version": "0.0.3",
-  "icon": "./icon.png",
+  "version": "0.0.4",
+  "icon": "./images/icon.ico",
   "repository": "https://github.com/BaselOrganization/BaselHighlighting",
   "engines": {
     "vscode": "^1.109.0"
@@ -23,6 +23,10 @@
         "extensions": [
           ".bs"
         ],
+        "icon": {
+          "light": "./images/icon.ico",
+          "dark": "./images/icon.ico"
+        },
         "configuration": "./language-configuration.json"
       }
     ],
