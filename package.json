@@ -1,0 +1,26 @@
+{
+  "name": "basel",
+  "displayName": "Basel",
+  "description": "Syntax highlighting for Basel language",
+  "version": "0.0.1",
+  "repository": "https://github.com/BaselOrganization/BaselHighlighting",
+  "engines": {
+    "vscode": "^1.109.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "basel",
+      "aliases": ["Basel", "basel"],
+      "extensions": [".bs"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "basel",
+      "scopeName": "source.bs",
+      "path": "./syntaxes/basel.tmLanguage.json"
+    }]
+  }
+}

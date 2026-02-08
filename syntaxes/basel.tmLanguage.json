@@ -1,0 +1,53 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Basel",
+	"patterns": [
+    {
+        "name": "keyword.control.basel",
+        "match": "\\b(if|else|while|return|fun|var|print)\\b"
+    },
+    {
+        "name": "constant.language.basel",
+        "match": "\\b(true|false|and|or)\\b"
+    },
+    {
+        "name": "string.quoted.double.basel",
+        "begin": "\"",
+        "end": "\"",
+        "patterns": [
+            {
+                "name": "constant.character.escape.basel",
+                "match": "\\\\."
+            }
+        ]
+    },
+    {
+        "name": "constant.numeric.basel",
+        "match": "\\b\\d+(\\.\\d+)?\\b"
+    },
+    {
+        "name": "comment.line.double-slash.basel",
+        "match": "//.*$"
+    }
+],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.basel",
+				"match": "\\b(if|while|for|return)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.basel",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.basel",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.bs"
+}
