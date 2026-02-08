@@ -2,34 +2,110 @@
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "Basel",
 	"patterns": [
-    {
-        "name": "keyword.control.basel",
-        "match": "\\b(if|else|while|return|fun|var|print)\\b"
-    },
-    {
-        "name": "constant.language.basel",
-        "match": "\\b(true|false|and|or)\\b"
-    },
-    {
-        "name": "string.quoted.double.basel",
-        "begin": "\"",
-        "end": "\"",
-        "patterns": [
-            {
-                "name": "constant.character.escape.basel",
-                "match": "\\\\."
-            }
-        ]
-    },
-    {
-        "name": "constant.numeric.basel",
-        "match": "\\b\\d+(\\.\\d+)?\\b"
-    },
-    {
-        "name": "comment.line.double-slash.basel",
-        "match": "//.*$"
-    }
-],
+		{
+			"name": "keyword.control.basel",
+			"match": "\\b(if|else|while|return|fun|var|print|for|class|new|this|super|try|catch|throw|finally|break|continue)\\b"
+		},
+		{
+			"name": "keyword.import.basel",
+			"match": "\\b(import|from|as)\\b"
+		},
+		{
+			"name": "entity.name.function.basel",
+			"match": "\\b(fun)\\s+([a-zA-Z_][a-zA-Z0-9_]*)\\b",
+			"captures": {
+				"2": {
+					"name": "entity.name.function.basel"
+				}
+			}
+		},
+		{
+			"name": "storage.type.function.basel",
+			"match": "\\b(fun)\\b"
+		},
+		{
+			"name": "storage.type.basel",
+			"match": "\\b(var|let|const|class|interface|enum|struct|module)\\b"
+		},
+		{
+			"name": "constant.language.basel",
+			"match": "\\b(true|false|null|nil|undefined|this|super)\\b"
+		},
+		{
+			"name": "string.quoted.double.basel",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.basel",
+					"match": "\\\\."
+				},
+				{
+					"name": "variable.interpolation.basel",
+					"match": "\\$\\{[^}]+\\}"
+				}
+			]
+		},
+		{
+			"name": "string.quoted.single.basel",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.basel",
+					"match": "\\\\."
+				}
+			]
+		},
+		{
+			"name": "string.template.basel",
+			"begin": "`",
+			"end": "`",
+			"patterns": [
+				{
+					"name": "constant.character.escape.basel",
+					"match": "\\\\."
+				},
+				{
+					"name": "variable.interpolation.basel",
+					"match": "\\$\\{[^}]+\\}"
+				}
+			]
+		},
+		{
+			"name": "constant.numeric.basel",
+			"match": "\\b\\d+(\\.\\d+)?\\b"
+		},
+		{
+			"name": "constant.numeric.hex.basel",
+			"match": "\\b0x[0-9a-fA-F]+\\b"
+		},
+		{
+			"name": "variable.language.basel",
+			"match": "\\b(this|super)\\b"
+		},
+		{
+			"name": "entity.name.type.basel",
+			"match": "\\b([A-Z][a-zA-Z0-9_]*)\\b"
+		},
+		{
+			"name": "support.function.basel",
+			"match": "\\b(print|println|log|error|warn|info|debug|trace)\\b"
+		},
+		{
+			"name": "comment.line.double-slash.basel",
+			"match": "//.*$"
+		},
+		{
+			"name": "comment.block.basel",
+			"begin": "/\\*",
+			"end": "\\*/"
+		},
+		{
+			"name": "invalid.illegal.basel",
+			"match": "."
+		}
+	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
